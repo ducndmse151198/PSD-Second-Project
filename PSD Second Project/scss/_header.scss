@@ -1,0 +1,63 @@
+.header {
+  padding-top: 4rem;
+  margin-bottom: 13.5rem;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo {
+    font-size: 2.6rem;
+    font-weight: 600;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &-navigation {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0 7rem;
+    }
+
+    &-list {
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0 50px;
+    }
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@include maxWidth(769px) {
+  .header {
+    margin-bottom: 10rem;
+  }
+}
+
+@include maxWidth(415px) {
+  .header {
+    margin-bottom: 7rem;
+
+    &-navigation {
+      &-wrapper {
+        gap: 0 1rem;
+      }
+      &-list {
+        display: none;
+      }
+    }
+
+    .menu-btn {
+      display: block;
+    }
+  }
+}

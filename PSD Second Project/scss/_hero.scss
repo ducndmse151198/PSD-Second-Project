@@ -1,0 +1,34 @@
+.hero {
+  text-align: center;
+  margin-bottom: 16rem;
+  &-main {
+    max-width: 71.5rem;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    margin-bottom: 2.2rem;
+  }
+
+  &-desc {
+    color: $text-secondary;
+    font-size: 2rem;
+    line-height: 1.56;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  }
+
+  .btn--primary {
+    margin-left: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@include maxWidth(769px) {
+  .hero {
+    margin-bottom: 10rem;
+  }
+}
